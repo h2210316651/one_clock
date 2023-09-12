@@ -245,8 +245,8 @@ class DigitalClockPainter extends CustomPainter {
 
   void _paintDigitalClock(Canvas canvas, Size size, double scaleFactor) {
     String textToBeDisplayed = showSeconds
-        ? INTL.DateFormat('h:mm:ss a').format(datetime)
-        : INTL.DateFormat('h:mm a').format(datetime);
+        ? INTL.DateFormat('dd-MM-yyyy h:mm:ss a').format(datetime)
+        : INTL.DateFormat('dd-MM-yyyy h:mm a').format(datetime);
     TextSpan digitalClockSpan = TextSpan(
         style: textStyle ??
             TextStyle(
